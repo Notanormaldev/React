@@ -1,0 +1,113 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+  background: #f7f7f7;
+  color: #111;
+  width: 100%;
+  height: 100%;
+}
+
+/* Top Navigation */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #fff;
+  gap: 2rem;
+
+  top: 0;
+  z-index: 100;
+}
+
+#nav img {
+  width: 40px;
+}
+
+#nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+#nav a:hover {
+  color: #0077ff;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+/* Hero Left */
+#hero div:first-child {
+  flex: 1;
+}
+
+#stats {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+#stats h3 {
+  font-size: 50px;
+  color: #111;
+  font-weight: 300;
+}
+
+#stats p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hero Heading */
+#hello {
+  font-size: 5rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 19px;
+  color: #555;
+}
+
+/* Hero Right */
+#hero div:last-child {
+  flex: 1;
+}
+
+#hero img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #hero {
+    flex-direction: column;
+  }
+  #hero div {
+    width: 100%;
+  }
+  #hero h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  #hero p {
+    text-align: center;
+  }
+}
